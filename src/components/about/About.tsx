@@ -1,6 +1,6 @@
 import "./About.css"
 import AboutImg from "../../assets/images/herman.png"
-import CV from "../../assets/resume/Herman.pdf"
+import Herman from "../../assets/resume/Herman.pdf"
 import Info from "./Info";
 import { useTranslation } from "react-i18next";
 
@@ -20,7 +20,7 @@ export default function About() {
 
                     <p className="about__description">{t("about.description")}</p>
 
-                    <a download="CV.pdf" href={CV} className="button button--flex">
+                    <a download="Herman.pdf" href={Herman} className="button button--flex">
                         {t("buttons.resume")}
                         <svg
                             className="button__icon"
