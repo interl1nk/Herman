@@ -24,7 +24,7 @@
   "scripts": {
     "tsc": "tsc || exit 0",
     "lint": "eslint . --ext .tsx,.ts,.js || true",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp CNAME build/",
     "start": "react-scripts start",
     "eject": "react-scripts eject"
   },
