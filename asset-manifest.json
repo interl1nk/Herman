@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Herman/static/css/main.8ce4385b.css",
-    "main.js": "/Herman/static/js/main.26e7662e.js",
+    "main.js": "/Herman/static/js/main.ed2f5cc5.js",
     "static/media/CV.pdf": "/Herman/static/media/CV.b29c000961bdafe73d76.pdf",
     "static/media/herman.png": "/Herman/static/media/herman.035e8e23d9da8fd1167b.png",
     "index.html": "/Herman/index.html",
     "main.8ce4385b.css.map": "/Herman/static/css/main.8ce4385b.css.map",
-    "main.26e7662e.js.map": "/Herman/static/js/main.26e7662e.js.map"
+    "main.ed2f5cc5.js.map": "/Herman/static/js/main.ed2f5cc5.js.map"
   },
   "entrypoints": [
     "static/css/main.8ce4385b.css",
-    "static/js/main.26e7662e.js"
+    "static/js/main.ed2f5cc5.js"
   ]
 }
