@@ -1,0 +1,137 @@
+{
+    "header": {
+        "name": "Herman",
+        "home": "Intro",
+        "about": "About Me",
+        "skills": "Skills",
+        "services": "Venture",
+        "qualification": "Qualification",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+    },
+    "home": {
+        "name": "My name is Herman",
+        "job_title": "Programmer, Entrepreneur",
+        "description": "Software engineer from Belarus with experience in full-stack development, specializing in backend. I develop scalable IT products, improving business processes and solving key problems."
+    },
+    "about": {
+        "title": "About Me",
+        "subtitle": "My Introduction",
+        "first_card": {
+            "exp": "Work experience",
+            "desc": "More than 3 years in IT"
+        },
+        "second_card": {
+            "exp": "Projects",
+            "desc": "Participated in 7+ projects, 2 completed."
+        },
+        "third_card": {
+            "support": "Support",
+            "desc": "Online 24/7"
+        },
+        "description": "I specialize in back-end development, with deep knowledge of programming languages and technologies. I have successfully delivered complex projects, providing precise and effective solutions for businesses. I quickly master new technologies, solve challenging problems, and contribute to the development of companies."
+    },
+    "skills": {
+        "title": "Skills",
+        "subtitle": "My technical skills",
+        "front": "Frontend development",
+        "back": "Back-end development",
+        "devops": "DevOps development",
+        "database": "Databases",
+        "basic": "Basic",
+        "intermidiate": "Intermediate"
+    },
+    "services": {
+        "title": "Venture",
+        "subtitle": "What I offer",
+        "first_card": {
+            "title": "Development",
+            "desc": "I design and develop IT products with high quality, effectively implementing modern technologies that not only improve business processes but also contribute to cost optimization, ensuring efficient use of the budget.",
+            "first": "Design and implementation of cloud systems",
+            "second": "Cost optimization for infrastructure",
+            "third": "Development of scalable solutions",
+            "fourth": "Implementation of modern technologies",
+            "fifth": "Ensuring security and compliance with requirements"
+        },
+        "second_card": {
+            "title": "Business",
+            "desc": "I thoroughly analyze and structure business processes, creating effective strategies that strengthen business relationships, enhance the company's competitiveness, and contribute to resource optimization.",
+            "first": "Business process analysis and optimization",
+            "second": "Development of digital transformation strategies",
+            "third": "Data and analytics management",
+            "fourth": "Customer experience (CX) improvement",
+            "fifth": "IT and business process integration"
+        },
+        "third_card": {
+            "title": "Partnership",
+            "desc": "I build international business relationships by developing strategies for collaboration with foreign partners, expanding the company's global opportunities, and contributing to its growth on the international stage.",
+            "first": "Engagement with investors and stakeholders",
+            "second": "Innovation and R&D",
+            "third": "Risk management and regulatory compliance",
+            "fourth": "Coordination of business contracts and agreements",
+            "fifth": "Cross-functional collaboration"
+        }
+    },
+    "qualification": {
+        "title": "Qualification",
+        "subtitle": "My personal journey",
+        "edu": "Education",
+        "university": "PJAIT (unfinished)",
+        "faculty": "Computer Science",
+        "present": "Present",
+        "aws_course": "Amazon Web Services",
+        "course": "Course",
+        "aws_certified_1": "Business Architect (Foundational)",
+        "aws_certified_2": "Cloud Solution Architect (Foundational)",
+        "country": "Poland - Warsaw",
+        "work": "Experience",
+        "job_1": "Back-end developer",
+        "job_2": "Fullstack developer",
+        "company_1": "Andersenlab (B2B)",
+        "company_2": "Mosaico AI (B2B)",
+        "company_3": "Innowise (B2B)",
+        "company_4": "Google for StartUps",
+        "country_by": "Belarus - Minsk",
+        "country_by-pl": "Poland/Belarus",
+        "pl_contract": "Poland B2B"
+    },
+    "contact": {
+        "title": "Get in touch",
+        "subtitle": "Contact Me",
+        "talk": "Messangers",
+        "form": "Fill the form",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "place_name": "Insert your name",
+        "place_email": "Insert your email",
+        "place_message": "Describe your proposal and leave a contact",
+        "sending": "Sending..."
+    },
+    "footer": {
+        "name": "Herman",
+        "about": "About Me",
+        "skills": "Skills",
+        "portfolio": "Portfolio",
+        "rights": "Herman. All rights reserved."
+    },
+    "buttons": {
+        "home_button": "Say Hello",
+        "scroll_button": "Scroll Down",
+        "resume": "Download CV",
+        "more": "View More",
+        "send": "Send message",
+        "write": "Write to me"
+    },
+    "errors": {
+        "error": "Error!",
+        "error_msg": "Something went wrong, try again later.",
+        "form": "Please, fill all the fields."
+    },
+    "response": {
+        "success": "Success!",
+        "ok": "Your form has been sent!",
+        "warning": "Warning!",
+        "link": "Direct links are not allowed."
+    }
+}
