@@ -36,11 +36,6 @@ export default function Contact() {
     const emailjsTemplateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
     const emailjsApiKey = process.env.REACT_APP_EMAILJS_API_KEY;
 
-    console.log(emailjsUserId);
-    console.log(emailjsTemplateId);
-    console.log(emailjsApiKey);
-
-
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         const maxLength = maxLengths[name as keyof typeof maxLengths];
