@@ -20,20 +20,34 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18.15.0'
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm install --save-exact
 
+      - name: Check for public/index.html
+        id: check-index
+        run: |
+          if [ ! -f ./public/index.html ]; then
+            echo "index.html not found. Skipping build."
+            echo "skip_build=true" >> $GITHUB_ENV
+          else
+            echo "index.html found. Proceeding with build."
+            echo "skip_build=false" >> $GITHUB_ENV
+          fi
+
       - name: Build Project
+        if: env.skip_build != 'true'
         run: npm run build
+        env:
+          REACT_APP_EMAILJS_API_KEY: ${{ secrets.REACT_APP_EMAILJS_API_KEY }}
+          REACT_APP_EMAILJS_TEMPLATE_ID: ${{ secrets.REACT_APP_EMAILJS_TEMPLATE_ID }}
+          REACT_APP_EMAILJS_USER_ID: ${{ secrets.REACT_APP_EMAILJS_USER_ID }}
 
       - name: Deploy to GitHub Pages
+        if: env.skip_build != 'true'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages   
           folder: build      
           token: ${{ secrets.GITHUB_TOKEN }}
-        env:
-          REACT_APP_EMAILJS_API_KEY: ${{ secrets.REACT_APP_EMAILJS_API_KEY }}
-          REACT_APP_EMAILJS_TEMPLATE_ID: ${{ secrets.REACT_APP_EMAILJS_TEMPLATE_ID }}
-          REACT_APP_EMAILJS_USER_ID: ${{ secrets.REACT_APP_EMAILJS_USER_ID }}

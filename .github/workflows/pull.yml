@@ -23,8 +23,9 @@ jobs:
         run: npm install --save-exact
 
       - name: Run ESLint
-        run: npm run lint || true
-        
+        run: |
+          npm run lint 
+
       - name: Type Check
         run: npm run tsc --noEmit
 
