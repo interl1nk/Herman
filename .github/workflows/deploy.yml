@@ -29,6 +29,7 @@ jobs:
         with:
           branch: gh-pages  
           folder: build     
+          token: ${{ secrets.GITHUB_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
           EMAILJS_API_KEY: ${{ secrets.EMAILJS_API_KEY }} 
