@@ -35,7 +35,7 @@ export default function Header() {
     return (
         <header className="header">
             <nav className="nav container">
-                <a href="/" className="nav__logo">{t("header.name")}</a>
+                <a href="#home" className="nav__logo">{t("header.name")}</a>
 
                 <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                     <ul className="nav__list grid">
