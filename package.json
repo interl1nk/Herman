@@ -1,7 +1,7 @@
 {
   "name": "web",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://interl1nk.github.io/Herman",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
