@@ -32,9 +32,9 @@ export default function Contact() {
         email: 64,
         message: 120
     }
-    const emailjsUserId = process.env.EMAILJS_USER_ID;
-    const emailjsTemplateId = process.env.EMAILJS_TEMPLATE_ID;
-    const emailjsApiKey = process.env.EMAILJS_API_KEY;
+    const emailjsUserId = process.env.REACT_APP_EMAILJS_USER_ID;
+    const emailjsTemplateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const emailjsApiKey = process.env.REACT_APP_EMAILJS_API_KEY;
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -87,10 +87,10 @@ export default function Contact() {
         if (form.current) {
             emailjs
                 .sendForm(
-                    emailjsUserId as string,
+                    emailjsApiKey as string,
                     emailjsTemplateId as string,
                     form.current,
-                    emailjsApiKey as string,
+                    emailjsUserId as string,
                 )
                 .then(() => {
                     setIsSending(false);
@@ -113,7 +113,7 @@ export default function Contact() {
                     console.log('FAILED...', error.text);
                     Swal.fire({
                         title: t("errors.error"),
-                        text: t("errors.form"),
+                        text: t("errors.error_msg"),
                         icon: "error",
                         backdrop: `rgba(0, 0, 0, 0.6)`,
                         timer: 3000, 
