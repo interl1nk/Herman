@@ -1,6 +1,6 @@
 import "./About.css"
 import AboutImg from "../../assets/images/herman.png"
-import CV from "../../assets/resume/CV.pdf"
+import CV from "../../assets/resume/Herman.pdf"
 import Info from "./Info";
 import { useTranslation } from "react-i18next";
 
