@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import "./Switch.css";
 
 export default function Switch() {
-    const [t, i18next] = useTranslation("global");
+    const [, i18next] = useTranslation("global");
 
     useEffect(() => {
         const savedLanguage = sessionStorage.getItem("language");
