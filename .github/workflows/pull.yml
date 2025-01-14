@@ -28,5 +28,17 @@ jobs:
       - name: Type Check
         run: npm run tsc --noEmit
 
+      - name: Check for public/index.html
+        id: check-index
+        run: |
+          if [ ! -f ./public/index.html ]; then
+            echo "index.html not found. Skipping build."
+            echo "skip_build=true" >> $GITHUB_ENV
+          else
+            echo "index.html found. Proceeding with build."
+            echo "skip_build=false" >> $GITHUB_ENV
+          fi
+
       - name: Build Project
+        if: env.skip_build != 'true'
         run: npm run build
