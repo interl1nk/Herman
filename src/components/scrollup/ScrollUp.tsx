@@ -8,6 +8,7 @@ export default function ScrollUp() {
     })
 
     return (
+        // eslint-disable-next-line jsx-a11y/anchor-is-valid
         <a href="#" className="scrollup">
             <i className="uil uil-arrow-up scrollup__icon"></i>
         </a>
