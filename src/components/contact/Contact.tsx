@@ -32,6 +32,9 @@ export default function Contact() {
         email: 64,
         message: 120
     }
+    const emailjsUserId = process.env.EMAILJS_USER_ID;
+    const emailjsTemplateId = process.env.EMAILJS_TEMPLATE_ID;
+    const emailjsApiKey = process.env.EMAILJS_API_KEY;
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -84,10 +87,10 @@ export default function Contact() {
         if (form.current) {
             emailjs
                 .sendForm(
-                    'service_ln0en1j',
-                    'template_1ehskab',
+                    emailjsUserId as string,
+                    emailjsTemplateId as string,
                     form.current,
-                    'iTbqyAPkOXQ34ohd4'
+                    emailjsApiKey as string,
                 )
                 .then(() => {
                     setIsSending(false);
