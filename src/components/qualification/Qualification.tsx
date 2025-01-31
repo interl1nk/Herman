@@ -154,7 +154,7 @@ export default function Qualification() {
                             <h3 className="qualification__title">{t("qualification.job_1")}</h3>
                                 <span className="qualification__subtitle">{t("qualification.company_2")}<br />{t("qualification.country")}</span>
                                 <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> 2023
+                                    <i className="uil uil-calendar-alt"></i> 2024
                                 </div>
                             </div>
                         </div>
